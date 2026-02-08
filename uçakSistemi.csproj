@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F2D8671-5CA5-4D18-8E3D-CE452B18335F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>uçakSistemi</RootNamespace>
+    <AssemblyName>uçakSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FiyatIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatIslemleri.Designer.cs">
+      <DependentUpon>FiyatIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hostes.cs" />
+    <Compile Include="HostesEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostesEkleForm.Designer.cs">
+      <DependentUpon>HostesEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostesForm.Designer.cs">
+      <DependentUpon>HostesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostesGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostesGuncelleForm.Designer.cs">
+      <DependentUpon>HostesGuncelleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı.cs" />
+    <Compile Include="Kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici.Designer.cs">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\DinamikFiyatlandirma.cs" />
+    <Compile Include="Managers\KullaniciManager.cs" />
+    <Compile Include="Managers\RezervasyonManager.cs" />
+    <Compile Include="Managers\UcakManager.cs" />
+    <Compile Include="Managers\UcusManager.cs" />
+    <Compile Include="Managers\VeritabaniHelper.cs" />
+    <Compile Include="Pilot.cs" />
+    <Compile Include="PilotEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilotEkleForm.Designer.cs">
+      <DependentUpon>PilotEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PilotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilotForm.Designer.cs">
+      <DependentUpon>PilotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PilotGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilotGuncelle.Designer.cs">
+      <DependentUpon>PilotGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PilotHostesIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilotHostesIslemleri.Designer.cs">
+      <DependentUpon>PilotHostesIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporForm.Designer.cs">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervasyon.cs" />
+    <Compile Include="RezervasyonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonForm.Designer.cs">
+      <DependentUpon>RezervasyonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ucak.cs" />
+    <Compile Include="UcakEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcakEkleForm.Designer.cs">
+      <DependentUpon>UcakEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcakIslemlerii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcakIslemlerii.Designer.cs">
+      <DependentUpon>UcakIslemlerii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ucus.cs" />
+    <Compile Include="UcusEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusEkleForm.Designer.cs">
+      <DependentUpon>UcusEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcusIslemlerii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusIslemlerii.Designer.cs">
+      <DependentUpon>UcusIslemlerii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yolcu.cs" />
+    <Compile Include="YolcuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuForm.Designer.cs">
+      <DependentUpon>YolcuForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FiyatIslemleri.resx">
+      <DependentUpon>FiyatIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostesEkleForm.resx">
+      <DependentUpon>HostesEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostesForm.resx">
+      <DependentUpon>HostesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici.resx">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilotEkleForm.resx">
+      <DependentUpon>PilotEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilotForm.resx">
+      <DependentUpon>PilotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilotHostesIslemleri.resx">
+      <DependentUpon>PilotHostesIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UcakEkleForm.resx">
+      <DependentUpon>UcakEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcakIslemlerii.resx">
+      <DependentUpon>UcakIslemlerii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusEkleForm.resx">
+      <DependentUpon>UcusEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusIslemlerii.resx">
+      <DependentUpon>UcusIslemlerii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuForm.resx">
+      <DependentUpon>YolcuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
